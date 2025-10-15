@@ -11,8 +11,7 @@ public class ProdutoRepository : IProdutoRepository
         new Produto() { Id = 3, Nome = "Produto 3", Preco = 12.99 },
     };
 
-    // Em uma aplicação real, os métodos abaixo devem fazer as devidas operações
-    // com um banco de dados, em chamadas assíncronas que retornam uma Task
+    // Em uma aplicação real, este método faria a devida operação com um banco de dados por meio de chamada assíncrona
 
     public List<Produto> GetAll()
         => _produtos;
