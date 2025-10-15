@@ -14,15 +14,6 @@ public class ProdutoRepository : IProdutoRepository
     // Em uma aplicação real, os métodos abaixo devem fazer as devidas operações
     // com um banco de dados, em chamadas assíncronas que retornam uma Task
 
-    public void Delete(Produto produto)            
-        => _produtos.Remove(produto);
-
     public List<Produto> GetAll()
         => _produtos;
-
-    public Produto? FindById(int id)
-        => _produtos.Find(x => x.Id == id);
-
-    public void Insert(Produto produto)
-        => _produtos.Add(produto);
 }
