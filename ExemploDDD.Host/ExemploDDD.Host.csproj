@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExemploDDD.Application\ExemploDDD.Application.csproj" />
+    <ProjectReference Include="..\ExemploDDD.Domain\ExemploDDD.Domain.csproj" />
+    <ProjectReference Include="..\ExemploDDD.Infrastucture\ExemploDDD.Infrastucture.csproj" />
+  </ItemGroup>
+
+</Project>
